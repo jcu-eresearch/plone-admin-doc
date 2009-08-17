@@ -12,6 +12,11 @@ Contents:
    :maxdepth: 2
    :numbered:
 
+   soe
+   virtualenv
+   buildout
+   deliverance
+   zope
    zeo
 
 Indices and tables
