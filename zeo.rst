@@ -3,6 +3,8 @@ Zeo
 
 .. sectionauthor:: Russell Sim <russell.sim@arcs.org.au>
 
+Zeo is a service that separates the data store out of the Zope service. This means we can take advantage of mass storage and allow better scalability.
+
 .. include:: zope-req.rst
 
 Install

@@ -3,6 +3,9 @@ Zope
 
 .. sectionauthor:: Russell Sim <russell.sim@arcs.org.au>
 
+Zope is a python web application server.
+
+
 .. include:: zope-req.rst
 
 Install
