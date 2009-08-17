@@ -34,3 +34,9 @@ If you have PasteScript installed you should now be able to run::
    $ cd dplone
    $ deliverance-proxy etc/deliverance.xml
 
+.. seealso::
+
+   Project `Deliverance <http://deliverance.openplans.org/>`_
+      The Deliverance homepage
+
+
