@@ -6,7 +6,7 @@ Zope
 Zope is a python web application server.
 
 
-.. include:: zope-req.rst
+.. include:: prereq.rst
 
 Install
 -------
@@ -17,35 +17,32 @@ Running as the **zope** user (as configured in the ``buildout.cfg`` file).
 
 Clone the current version of the Zope buildout::
 
-   $ cd /opt
-   $ git clone git://code.arcs.org.au/plone-deployments/zope-buildout.git zope
-   $ cd zope
+   cd /opt
+   git clone git://code.arcs.org.au/plone-deployments/zope-buildout.git zope
+   cd zope
 
 Install `zc.buildout`_ using the bootstrap script::
 
-   $ python2.4 bootstrap.py
+   python2.4 bootstrap.py
 
 Execute the buildout to install and configure Zope and the Zope Instance.
 
 ::
 
-   $ bin/buildout
+   bin/buildout
 
 
-The script for running the server is located at::
+Zope Service Control
+--------------------
 
-   /opt/zope/etc/init.d/zope
-
-Symlink it into place for ease of use by other administrators ``ln -s /opt/zope/etc/init.d/zope /etc/init.d/zope``
-
+.. include:: service.rst
 
 
-The Zope instances control scripts are all located in the bin directory. 
-Running the following command will run as the effective user zope.
+Intergrating with Operating System
+----------------------------------
 
-::
+.. include:: intergration.rst
 
-  $ bin/instance start
 
 Setting Emergency User
 ----------------------

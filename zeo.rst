@@ -5,7 +5,7 @@ Zeo
 
 Zeo is a service that separates the data store out of the Zope service. This means we can take advantage of mass storage and allow better scalability.
 
-.. include:: zope-req.rst
+.. include:: zope/prereq.rst
 
 Install
 -------
@@ -27,7 +27,7 @@ The script for running the server is located at::
 Now, you need to run::
 
 
- $ python2.4 bootstrap.py
+  python2.4 bootstrap.py
 
 
 This will install zc.buildout for you.
@@ -37,7 +37,7 @@ python-devel package.
 
 ::
 
- $ bin/buildout
+   bin/buildout
 
 
 The Zeo instances control scripts are all located in the bin directory. 
@@ -45,5 +45,5 @@ Running the following command will run as the effective user zope.
 
 ::
 
- $ bin/zeo-arcs start
+   bin/zeo-arcs start
 

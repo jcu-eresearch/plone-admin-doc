@@ -16,7 +16,7 @@ Contents:
    virtualenv
    buildout
    deliverance
-   zope
+   zope/index
    zeo
    faq
 

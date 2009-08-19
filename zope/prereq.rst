@@ -1,6 +1,6 @@
 
-Prerequisites
--------------
+Zope/ZEO Prerequisites
+----------------------
 
 You need to install the following packages before running buildout:
 
