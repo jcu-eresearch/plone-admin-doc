@@ -47,4 +47,26 @@ Running the following command will run as the effective user zope.
 
   $ bin/instance start
 
+Setting Emergency User
+----------------------
+
+Within the ``buildout.cfg`` file the are sections that describe the configuration of the services. The sections titled **instanceN** uses the `plone.recipe.zope2instance`_ recipe to describe the Zope instances that host the applications. To set the emergency user and password for one of these instances use the **user** property.
+
+::
+
+   [instance]
+   user = admin:secret
+
+Setting Effective User
+----------------------
+
+Within the ``buildout.cfg`` file the are sections that describe the configuration of the services. The sections titled **instanceN** uses the `plone.recipe.zope2instance`_ recipe to describe the Zope instances that host the applications. To set the effective user that the service will run as use the **effective-user** property.
+
+::
+
+   [instance]
+   effective-user = zope
+
+
 .. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
+.. _`plone.recipe.zope2instance`: http://pypi.python.org/pypi/plone.recipe.zope2instance
