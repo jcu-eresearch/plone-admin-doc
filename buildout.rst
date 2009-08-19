@@ -35,8 +35,26 @@ Recipes
 
 Buildout uses recipes to install an configure the software. By default buildout can only install python eggs but using recipes as extension points allows bulidtout to install complex applications like `nginx`_ [#f2]_, `apache`_ [#f3]_ and `varnish`_ [#f4]_ and other useful software.
 
-
-
+`plone.recipe.zope2zeoserver <http://pypi.python.org/pypi/plone.recipe.zope2zeoserver>`_
+   Install a Zope ZEO server.
+`plone.recipe.zope2instance <http://pypi.python.org/pypi/plone.recipe.zope2instance>`_
+   Install a Zope ZEO server.
+`plone.recipe.distros <http://pypi.python.org/pypi/plone.recipe.distros/1.5>`_
+   Install Old style products into a directory for use with zope2instance recipe.
+`zc.recipe.deployment <http://pypi.python.org/pypi/zc.recipe.deployment/0.6.0>`_
+   Templates simple config files like cron and logrotate
+`plone.recipe.zope2install <http://pypi.python.org/pypi/plone.recipe.zope2install/3.2>`_
+   Install and compile Zope2
+`zc.recipe.egg <http://pypi.python.org/pypi/zc.recipe.egg/1.2.2>`_
+   Install a python egg, usually used for installing extra tools.
+`iw.recipe.cmd <http://pypi.python.org/pypi/iw.recipe.cmd/0.3>`_
+   Run command line tools to complete an install, e.g. ``chown``
+`z3c.recipe.template <http://pypi.python.org/pypi/z3c.recipe.template/0.1>`_
+   Template a file using variables defined in the buildout.cfg
+`zerokzpot.recipe.git <http://pypi.python.org/pypi/zerokspot.recipe.git/0.4.2>`_
+   Checkout some code from git
+`iw.recipe.subversion <http://pypi.python.org/pypi/iw.recipe.subversion/0.3.1>`_
+   Checkout some code from SVN
 
 Regenerating Scripts
 --------------------
