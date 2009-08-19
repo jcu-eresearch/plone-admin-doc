@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% set title = 'Overview' %}
+{% block body %}
+  <h1>ARCS Plone deployment documentation.</h1>
+
+  <p>
+    This is a collection of documentation for manageing and deplying Zope/Plone within ARCS. The purpose is to assist system adminsitrators who are not farmiliar with the software.
+  </p>
+
+  <h2>Documentation</h2>
+  <table class="contentstable" align="center" style="margin-left: 30px"><tr>
+    <td width="50%">
+      <p class="biglink"><a class="biglink" href="{{ pathto("quickstart") }}">Quickstart</a><br/>
+         <span class="linkdescr">a quickstart recipe</span></p>
+    </td><td width="50%">
+      <p class="biglink"><a class="biglink" href="{{ pathto("contents") }}">Contents</a><br/>
+         <span class="linkdescr">for a complete overview</span></p>
+    </td></tr>
+  </table>
+
+  <h2>Deploy Plone</h2>
+  <p>The code can be found in a Git repository, at
+    <tt>http://code.arcs.org.au/gitorious/plone-deployments/zope-buildout</tt>.</p>
+
+{% endblock %}

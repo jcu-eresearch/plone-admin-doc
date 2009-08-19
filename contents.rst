@@ -18,11 +18,10 @@ Contents:
    deliverance
    zope
    zeo
+   faq
 
-Indices and tables
-==================
+Search
+======
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
