@@ -30,6 +30,13 @@ When deploying the first step is to bootstrap the environment with the required 
 
 Once the bootstrapping is complete, you can execute the `bin/buildout` script which will configure the environment based on the configuration stored in `buildout.cfg`
 
+Recipes
+-------
+
+Buildout uses recipes to install an configure the software. By default buildout can only install python eggs but using recipes as extension points allows bulidtout to install complex applications like `nginx`_ [#f2]_, `apache`_ [#f3]_ and `varnish`_ [#f4]_ and other useful software.
+
+
+
 
 Regenerating Scripts
 --------------------
@@ -63,11 +70,17 @@ Running buildout without any options causes it to check for new versions of soft
 .. rubric:: Footnotes
 
 .. [#f1] Standard buildout `directory layout <http://www.buildout.org/docs/dirstruct.html>`_
+.. [#f2] `Nginx Recipe <http://pypi.python.org/pypi/gocept.nginx>`_
+.. [#f3] `Apache Recipe <http://pypi.python.org/pypi/plone.recipe.apache/0.3.1>`_
+.. [#f4] `Varnish Recipe <http://pypi.python.org/pypi/plone.recipe.varnish>`_
 
 
 .. _`ez_setup.py`: http://peak.telecommunity.com/dist/ez_setup.py
 .. _`bootstrap.py`: http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
 .. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
 .. _`setuptools`: http://peak.telecommunity.com/DevCenter/setuptools
+.. _`apache`: http://www.apache.org
+.. _`nginx`: http://wiki.nginx.org
+.. _`varnish`: http://varnish.projects.linpro.no
 
 
