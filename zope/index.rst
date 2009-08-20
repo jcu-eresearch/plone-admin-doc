@@ -6,7 +6,11 @@ Zope
 Zope is a python web application server.
 
 
+Prerequisites
+-------------
+
 .. include:: prereq.rst
+
 
 Install
 -------

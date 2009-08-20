@@ -22,6 +22,7 @@ If your system doesn't have easy_install packaged :ref:`install easyinstall <faq
    cd /opt
    python2.4 `which virtualenv` zope2-python
 
+
 .. include:: zope/prereq.rst
 
 

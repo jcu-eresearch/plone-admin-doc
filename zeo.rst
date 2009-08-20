@@ -5,6 +5,9 @@ Zeo
 
 Zeo is a service that separates the data store out of the Zope service. This means we can take advantage of mass storage and allow better scalability.
 
+Prerequisites
+-------------
+
 .. include:: zope/prereq.rst
 
 Install
