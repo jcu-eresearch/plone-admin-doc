@@ -10,19 +10,19 @@ The easiest way to get started with deliverance is using virtual env
 
 ::
 
-   virtualenv deliverance
-   cd deliverance
-   . ./bin/activate
-   mkdir src
-   cd src
-   svn co http://codespeak.net/svn/z3/deliverance/trunk/ deliverance
-   cd deliverance
-   python setup.py devlop
-   cd ../..
+   $ virtualenv deliverance
+   $ cd deliverance
+   $ . ./bin/activate
+   $ mkdir src
+   $ cd src
+   $ svn co http://codespeak.net/svn/z3/deliverance/trunk/ deliverance
+   $ cd deliverance
+   $ python setup.py develop
+   $ cd ../..
 
 If you have PasteScript installed you should now be able to run::
 
-   paster create --list-templates
+   $ paster create --list-templates
 
 To get a list of all the available templates.::
 
@@ -35,13 +35,13 @@ To get a list of all the available templates.::
 
 Using paster we can now create a basic deliverance theme::
 
-   paster create -t deliverance_plone dplone
+   $ paster create -t deliverance_plone dplone
    .....
-   cd dplone
+   $ cd dplone
 
 Once the templates has been generated we can execute deliverance with::
 
-   deliverance-proxy etc/deliverance.xml
+   $ deliverance-proxy etc/deliverance.xml
 
 .. seealso::
 
