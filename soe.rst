@@ -17,6 +17,12 @@ Starting/Stopping and Restarting should all happen using the systems buitin serv
    Usage: /etc/init.d/zeo {start|stop|restart|reload|status}
 
 
+Effective Users
+---------------
+
+In the case of development machines the services should be running as the branch name from git. Production services run as the user ``zope``.
+
+
 Directory Layout
 ----------------
 
