@@ -73,6 +73,22 @@ Within the ``buildout.cfg`` file the are sections that describe the configuratio
    [instance]
    effective-user = zope
 
+Syslog Support
+--------------
+
+Enabling syslog support
+
+::
+   <eventlog>
+     level INFO
+     <syslog>
+       address syslog.arcs.org.au:514
+       facility local1
+       format abin: %(message)s
+       level info
+     </syslog>
+   </eventlog>
+
 
 .. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
 .. _`plone.recipe.zope2instance`: http://pypi.python.org/pypi/plone.recipe.zope2instance
