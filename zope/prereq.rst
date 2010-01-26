@@ -3,7 +3,7 @@ Zope2 requires the install of the following packages:
 
 **Debian**::
 
-    sudo apt-get install libdb4.4-dev libsasl2-dev libssl-dev libldap python-ldap libldap2-dev libxslt1.1 libxslt1-dev python-libxslt1 python2.4-dev python2.4 python-imaging zlib1g-dev logrotate
+    sudo apt-get install libdb4.4-dev libsasl2-dev libssl-dev libldap python-ldap libldap2-dev libxslt1.1 libxslt1-dev python-libxslt1 python2.4-dev python2.4 python-imaging zlib1g-dev logrotate python-virtualenv
 
 
 **Red Hat**::

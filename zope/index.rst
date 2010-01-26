@@ -25,9 +25,14 @@ Clone the current version of the Zope buildout::
    git clone git://code.arcs.org.au/plone-deployments/zope-buildout.git zope
    cd zope
 
+Install a virtualenv inside the buildout::
+
+   virtualenv -p /usr/bin/python2.4 .
+   source ./bin/activate
+
 Install `zc.buildout`_ using the bootstrap script::
 
-   python2.4 bootstrap.py
+   python bootstrap.py
 
 Execute the buildout to install and configure Zope and the Zope Instance.
 
