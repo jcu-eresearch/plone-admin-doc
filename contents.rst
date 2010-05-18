@@ -6,10 +6,8 @@
 Welcome to Plone Deployment's documentation!
 ============================================
 
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :numbered:
 
    soe
@@ -19,9 +17,14 @@ Contents:
    zope/index
    zeo
    faq
+   further_reading
+.. only:: html clients
 
-Search
-======
+.. only:: html
 
-* :ref:`search`
+   Search
+   ======
+
+   * :ref:`search`
+
 

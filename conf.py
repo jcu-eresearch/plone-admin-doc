@@ -38,7 +38,7 @@ master_doc = 'contents'
 
 # General information about the project.
 project = u'Plone Deployment'
-copyright = u'2009, Russell Sim'
+copyright = u'2010, ARCS Collaboration Services'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -57,7 +57,7 @@ release = '0.1'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%d %B %Y'
 
 # List of documents that shouldn't be included in the build.
 #unused_docs = []
@@ -110,12 +110,12 @@ html_theme = 'default'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'resources/ARCS_LogoTag_CMYK.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-#html_favicon = None
+html_favicon = 'resources/arcs_favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -128,14 +128,13 @@ html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
-#html_use_smartypants = True
+html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-#html_additional_pages = {}
 html_additional_pages = {'index': 'index.html'}
 
 # If false, no module index is generated.
@@ -167,34 +166,40 @@ htmlhelp_basename = 'PloneDeploymentdoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 # The paper size ('letter' or 'a4').
-#latex_paper_size = 'letter'
+latex_paper_size = 'a4'
 
 # The font size ('10pt', '11pt' or '12pt').
-#latex_font_size = '10pt'
+latex_font_size = '11pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'PloneDeployment.tex', u'Plone Deployment Documentation',
-   u'Russell Sim', 'manual'),
+  (master_doc, 'PloneDeployment.tex', u'Plone Deployment Documentation',
+   u'ARCS Collaboration Services', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'resources/ARCS_LogoTag_CMYK.pdf'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
 #latex_use_parts = False
 
 # Additional stuff for the LaTeX preamble.
-#latex_preamble = ''
+latex_elements = {
+    'papersize': 'a4paper',
+    'pointsize:': '11pt',
+    'babel':'\\usepackage[english]{babel}',
+    'fontpkg':'\\usepackage{times}',
+    'fncychap': '\\usepackage[Bjarne]{fncychap}',
+}
 
 # Documents to append as an appendix to all manuals.
-#latex_appendices = []
+latex_appendices = [ 'clients' ]
 
 # If false, no module index is generated.
-#latex_use_modindex = True
+latex_use_modindex = True
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
