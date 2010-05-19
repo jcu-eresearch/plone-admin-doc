@@ -1,12 +1,5 @@
-Buildout
-========
-
-.. sectionauthor:: Russell Sim <russell.sim@arcs.org.au>
-
-Buildout is an advanced deployment systems that is mostly used to deploy and test Zope environments. Buildout leverages  existing Python tools like `ez_setup.py`_ and `setuptools`_ to create complex reproducible installs of complex systems.
-
-Deploying
----------
+Deploying Buildout
+------------------
 
 When deploying the first step is to bootstrap the environment with the required python libraries and create directories [#f1]_ that will be used for the deployment.
 

@@ -10,15 +10,19 @@ Welcome to Plone Deployment's documentation!
    :maxdepth: 3
    :numbered:
 
-   soe
-   virtualenv
-   buildout
-   deliverance
-   zope/index
-   zeo
-   faq
-   further_reading
-.. only:: html clients
+   system/requirements
+   system/soe
+   system/service_diagram
+   tech/virtualenv
+   tech/buildout
+   tech/deliverance
+   tech/zope/index
+   tech/zeo
+   extra/faq
+   extra/further_reading
+.. only:: html extra/clients
+   extra/glossary
+.. only:: html change_log
 
 .. only:: html
 

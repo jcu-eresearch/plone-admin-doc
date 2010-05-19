@@ -196,7 +196,7 @@ latex_elements = {
 }
 
 # Documents to append as an appendix to all manuals.
-latex_appendices = [ 'clients' ]
+latex_appendices = [ 'clients', 'extra/glossary', 'change_log' ]
 
 # If false, no module index is generated.
 latex_use_modindex = True
