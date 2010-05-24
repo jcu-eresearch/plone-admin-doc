@@ -10,11 +10,13 @@ Welcome to Plone Deployment's documentation!
    :maxdepth: 3
    :numbered:
 
+   intro
    system/requirements
    system/soe
    system/service_diagram
    tech/virtualenv
    tech/buildout
+   tech/plone
    tech/deliverance
    tech/zope/index
    tech/zeo

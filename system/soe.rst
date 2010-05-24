@@ -1,12 +1,10 @@
 Standard Operating Environment
 ==============================
 
-.. sectionauthor:: Russell Sim <russell.sim@arcs.org.au>
-
 Service Operation
 -----------------
 
-Starting/Stopping and Restarting should all happen using the systems buitin services implementation.
+Starting/Stopping and Restarting should all happen using the systems' buitin services implementation.
 
 ::
 
@@ -16,6 +14,7 @@ Starting/Stopping and Restarting should all happen using the systems buitin serv
    $ /etc/init.d/zeo
    Usage: /etc/init.d/zeo {start|stop|restart|reload|status}
 
+Depending on the OS on the server, your 'best-practice' command may be something like ``service {zope|zeo} {start|stop|restart|reload|status``.
 
 Effective Users
 ---------------
