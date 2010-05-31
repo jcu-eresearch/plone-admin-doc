@@ -4,7 +4,7 @@ Buildout
 About
 -----
 
-Buildout is an advanced deployment system that is typically used for deploying Python applications.  In the instance, buildout is used to deploy the Plone CMS, being built upon a Zope environment. Buildout leverages  existing Python tools like `ez_setup.py`_ and `setuptools`_ to create complex reproducible installs of complex systems.  Essentially, this means that a small set of configuration files are stored in a code repository (for example, `Subversion` or `git`) and these can be checked-out and built on almost any computing environment.  There are some reservations about making a statement like `our software can run on any computer`, but any mainstream set of computing hardware (Intel or AMD-based), with a reasonably mainstream OS (Windows, Mac, Linux) should be able to run buildout.
+Buildout is an advanced deployment system that is typically used for deploying Python applications.  In the instance, buildout is used to deploy the Plone CMS, being built upon a Zope environment. Buildout leverages existing Python tools like `ez_setup.py`_ and `setuptools`_ to create complex reproducible installs of complex systems.  Essentially, this means that a small set of configuration files are stored in a code repository (for example, `Subversion` or `git`) and these can be checked-out and built on almost any computing environment.  There are some reservations about making a statement like `our software can run on any computer`, but any mainstream set of computing hardware (Intel or AMD-based), with a reasonably mainstream OS (Windows, Mac, Linux) should be able to run buildout.
 
 Why?
 ----
@@ -50,5 +50,15 @@ Don't worry if you don't understand everything that's written here, it'll become
 More information
 ----------------
 
-See the Buildout website, at http://www.buildout.org/.
+See the `Buildout`_ website.
 
+.. seealso::
+
+   `ez_setup.py <http://peak.telecommunity.com/dist/ez_setup.py>`_
+       Script for setting up easy_install
+   `Setuptools <http://pypi.python.org/pypi/setuptools>`_
+       The setuptools homepage
+   `collective.eggproxy <http://pypi.python.org/pypi/collective.eggproxy>`_
+       A proxy server used to maintain an intelligent mirror of PyPI packages.
+   `Buildout <http://www.buildout.org>`_
+       Home page of the Buildout project 

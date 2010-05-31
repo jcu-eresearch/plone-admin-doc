@@ -33,9 +33,7 @@ Using a virtual environment
 New environment
 ~~~~~~~~~~~~~~~
 
-Building a new environment is simple.  You just run the `virtualenv`_ command, and your virtual environment is automagically created.
-
-::
+Building a new environment is simple.  You just run the `virtualenv`_ command, and your virtual environment is automagically created.::
 
    $ virtualenv virt-python
    $ source virt-python/bin/activate
@@ -47,9 +45,8 @@ Using the `source` command activates the virtualenv, causing the default Python 
 Upgrading an existing folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Converting any existing folder (such as a pre-existing buildout) to virtualenv is straightforward.
+Converting any existing folder (such as a pre-existing buildout) to virtualenv is straightforward.::
 
-::
    $ cd ~/virt-python
    $ virtualenv . 
    $ source ./bin/activate
