@@ -16,10 +16,10 @@ Welcome to Plone Deployment's documentation!
    system/service_diagram
    tech/virtualenv
    tech/buildout
-   tech/plone
-   tech/deliverance
    tech/zope/index
+   tech/plone
    tech/zeo
+   tech/deliverance
    extra/faq
    extra/further_reading
 .. only:: html extra/clients

@@ -69,7 +69,7 @@ Notes on networking
 
 As with any web-based service, your clients will need to be able to connect to the sites that you are operating.  This involves ensuring that network connectivity is working end-to-end.  In the case of an Intranet site, then your local network may well be set up already to facilitate the connection from your users' desktop computers.  Depending on your network, however, you may need to get your system administrator to open certain firewall ports.
 
-In the case of an Internet site, you will need to ensure that you have at least a single externally-visible IP address and that the relevant ports required are going to be forward through your organisation's firewall.  In the most comlete example, you should have ports 80 and 443 forwarded through to your host machine for HTTP and HTTPS (SSL) access respectively.  If your site is to use HTTPS, then you require a dedicated public IP address and you should also seek a :accr:`CA (Certificate Authority)`-signed certificate for use for the given domain.
+In the case of an Internet site, you will need to ensure that you have at least a single externally-visible IP address and that the relevant ports required are going to be forward through your organisation's firewall.  In the most comlete example, you should have ports 80 and 443 forwarded through to your host machine for HTTP and HTTPS (SSL) access respectively.  If your site is to use HTTPS, then you require a dedicated public IP address and you should also seek a :abbr:`CA (Certificate Authority)`-signed certificate for use for the given domain.
 
 Service Diagram
 ---------------

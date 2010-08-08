@@ -22,3 +22,4 @@ Technology
 ----------
 
 Plone is built using the Zope application server, and has been written using a combination of Python, XHTML, Javascript, CSS and other associated languages.  It is designed to be a service that one can run on a dedicated or shared server, rather than other :term:`CMS` products whcih run using scripting languages, such as PHP.  It is because of this that Plone aims to better separate core functionality away from views presented to the user.  So, unlike other :term:`CMS` products, you are able to customise functionality by programming best-practices (subclassing, adapters, and the like).
+
