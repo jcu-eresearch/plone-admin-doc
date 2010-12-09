@@ -1,5 +1,15 @@
-Deliverance
-===========
+Diazo (collective.xdv) and Deliverance
+======================================
+
+Important note
+--------------
+
+Deliverance is no longer being supported as 'the' advanced theming method for Plone.  Diazo (formerly ``collective.xdv``) implements essentially what Deliverance does, but within Zope itself as a post-production hook.  By doing this, we reducing the need to hack options together, get more support from the community, and only need to run a single, seamless sevice.
+
+Any references from this point onwards to Deliverance should essentially apply to Diazo as well.  Diazo works with tiny differences in rule syntax and configurations, but does exactly the same job (and occasionally, a lot more than Deliverance!).
+
+About these tools
+-----------------
 
 Deliverance is a middleware application that can theme web applications against a static (X)HTML theme.  The benefit of using Deliverance over traditional theming techniques is that Deliverance is universal and works with any web-based output.  Using a set of transformation rules, Deliverance can move and maniuplate content from a web page or application into areas of a static theme.  
 

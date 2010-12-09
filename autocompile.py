@@ -7,7 +7,8 @@
 # files ending with suffix |extk|. Run |cmd| each time a modification
 # is detected. |cmd| is optional and defaults to 'make'.
 #
-# Example:
+# Examples:
+#   ./autocompile.py source/ .rst bin/sphinxbuilder
 #   ./autocompile.py /my-latex-document-dir .tex "make pdf"
 #
 # Dependancies:

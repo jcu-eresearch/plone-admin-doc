@@ -20,6 +20,9 @@ import sys, os
 
 # -- General configuration -----------------------------------------------------
 
+arcs = False
+internal = False
+
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo']
@@ -38,7 +41,10 @@ master_doc = 'contents'
 
 # General information about the project.
 project = u'Plone Deployment'
-copyright = u'2010, ARCS Collaboration Services'
+if arcs:
+    copyright = u'2010, ARCS Collaboration Services'
+else:
+    copyright = u'2010, James Cook University'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -110,12 +116,18 @@ html_theme = 'default'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'resources/ARCS_LogoTag_CMYK.png'
+if arcs:
+    html_logo = 'resources/ARCS_LogoTag_CMYK.png'
+else:
+    html_logo = 'resources/jcu_logo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = 'resources/arcs_favicon.ico'
+if arcs:
+    html_favicon = 'resources/arcs_favicon.ico'
+else:
+    html_favicon = 'resources/jcu_favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -175,12 +187,15 @@ latex_font_size = '11pt'
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   (master_doc, 'PloneDeployment.tex', u'Plone Deployment Documentation',
-   u'ARCS Collaboration Services', 'manual'),
+   u'JCU eResearch Centre', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = 'resources/ARCS_LogoTag_CMYK.pdf'
+if arcs:
+    latex_logo = 'resources/ARCS_LogoTag_CMYK.pdf'
+else:
+    latex_logo = 'resources/jcu_logo.pdf'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -196,7 +211,9 @@ latex_elements = {
 }
 
 # Documents to append as an appendix to all manuals.
-latex_appendices = [ 'extra/clients', 'extra/glossary', 'change_log' ]
+latex_appendices = []
+if internal:
+    latex_appendices += [ 'extra/clients', 'extra/glossary', 'change_log' ]
 
 # If false, no module index is generated.
 latex_use_modindex = True

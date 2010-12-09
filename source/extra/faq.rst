@@ -38,4 +38,6 @@ There's a lot of little things that can make life simpler when dealing with buil
    
  * ``ipython`` is quite a handy tool as well for being able to run commands, safely & without (much) fear on a production instance, even if it's still running.  Keep in mind that anything you do in an ipython session isn't saved until you run import transation and transaction.commit().  Otherwise, if you kill your ipython, any variable/changes/etc that you did will disappear (good and bad, depending on circumstance).  Check here for details: http://plone.org/documentation/how-to/setup-ipython-for-zope
 
+     * In conjunction with ``ipython``, ``ipdb`` is an excellent replacement for the standard ``pdb`` debugger for Python code.  Install ``ipdb`` in your buildout and you can simply use it in the same manner as you would ``pdb``, such as ``import ipdb; ipdb.set_trace()`` to get a live, ipython-based debugger anywhere in your code.
+
 

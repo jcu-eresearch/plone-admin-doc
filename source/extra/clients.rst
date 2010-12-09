@@ -19,5 +19,6 @@ Here's some friendly suggestions on how to take care of users and point them in 
 
  * If a site is using LDAP or another external authentication method and a user used to be able to log in and now can't, it's probably because that service has changed, not our site.  It's always a possibility some underlying system issue may be causing it, but for the most part, it will likely be the user isn't authenticating with the right credentials.  Test the site yourself, and if you have no troubles, then direct the user to their relevant help desk for assistance.
 
+      * The point mentioned above applies to database-connected Plone/Zope instances as well.  For example, if your Plone instance integrates with an Oracle or other relational database, and you immediately start receiving errors, then consider whether it could be likely that database that changed.  This is the life of working with systems beyond our control.
 
 

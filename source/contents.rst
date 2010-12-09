@@ -13,7 +13,6 @@ Welcome to Plone Deployment's documentation!
    intro
    system/requirements
    system/soe
-   system/service_diagram
    tech/virtualenv
    tech/buildout
    tech/zope/index
