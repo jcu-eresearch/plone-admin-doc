@@ -3,6 +3,8 @@
     single: service
     single: diagram
 
+.. _service-diagram:
+
 Service Diagram
 ---------------
 
