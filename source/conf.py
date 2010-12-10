@@ -185,10 +185,16 @@ latex_font_size = '11pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-  (master_doc, 'PloneDeployment.tex', u'Plone Deployment Documentation',
-   u'JCU eResearch Centre', 'manual'),
-]
+if arcs:
+    latex_documents = [
+      (master_doc, 'PloneDeployment.tex', u'Plone Deployment Documentation',
+       u'Australian Research Collaboration Service', 'manual'),
+    ]
+else:
+    latex_documents = [
+      (master_doc, 'PloneDeployment.tex', u'Plone Deployment Documentation',
+       u'JCU eResearch Centre', 'manual'),
+    ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
