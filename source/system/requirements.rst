@@ -71,14 +71,4 @@ As with any web-based service, your clients will need to be able to connect to t
 
 In the case of an Internet site, you will need to ensure that you have at least a single externally-visible IP address and that the relevant ports required are going to be forward through your organisation's firewall.  In the most comlete example, you should have ports 80 and 443 forwarded through to your host machine for HTTP and HTTPS (SSL) access respectively.  If your site is to use HTTPS, then you require a dedicated public IP address and you should also seek a :abbr:`CA (Certificate Authority)`-signed certificate for use for the given domain.
 
-Service Diagram
----------------
-
-An example system layout might be the following:
-
-.. image:: ../resources/service-diagram.pdf
-   :width: 300pt
-
-In this diagram, the typical port allocations are detailed beneath the relevant service name.  Also, please note that this is just a general overview of the system and doesn't being to take into account aspects like where these services should physically reside or similar points.  In this example, the services could live all on one virtual machine, or could be spread across five or more physical computers.
-
-Keep in mind that not all services may be in use for any given installation of Plone.  If your site is smaller, or doesn't need multiple Zope instances connecting to your backend storage, then you may not be using Zeo.  Similarly, if your site is not being cache-accelerated, then you may not being using Varnish.
+.. include:: service_diagram.rst
