@@ -207,6 +207,12 @@ else:
 # not chapters.
 #latex_use_parts = False
 
+#Add page references after internal references within LaTeX output
+latex_show_pagerefs = True
+
+#Show URLs after links within LaTeX output
+latex_show_urls = True
+
 # Additional stuff for the LaTeX preamble.
 latex_elements = {
     'papersize': 'a4paper',
@@ -221,8 +227,9 @@ latex_appendices = []
 if internal:
     latex_appendices += [ 'extra/clients', 'extra/glossary', 'change_log' ]
 
-# If false, no module index is generated.
-latex_use_modindex = True
+#If true, generate domain-specific indices in addition to the general index. For e.g. the Python domain, this is the global module index. Default is True.
+#This value can be a bool or a list of index names that should be generated, like for html_domain_indices.
+latex_domain_indices = True
 
 
 # Example configuration for intersphinx: refer to the Python standard library.

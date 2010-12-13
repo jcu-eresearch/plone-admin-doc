@@ -12,9 +12,10 @@ How do I...
    
        $ python ez_setup.py
 
-    Keep in mind that you may need to run the above command with a specific Python version (for example, ``python2.4`` or ``python2.6``).  This will be entirely dependent on your host system and which version of Plone you are using. 
-
-   
+Keep in mind that you may need to run the above command with a specific 
+Python version (for example, ``python2.4`` or ``python2.6``).  This will 
+be entirely dependent on your host system and which version of Plone you 
+are using. 
 
 What not to do
 --------------
